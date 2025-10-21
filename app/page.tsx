@@ -136,7 +136,7 @@ export default function Home() {
           className="text-center py-6 px-6 mt-auto"
         >
           <div className="text-xs text-[rgb(var(--color-text-muted))]">
-            <p>© 2024 专注于提供精确的IP地理位置信息</p>
+            <p>© 2025 专注于提供精确的IP地理位置信息</p>
           </div>
         </motion.footer>
       </div>
