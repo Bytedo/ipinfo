@@ -5,11 +5,11 @@ import { GeoIPError } from "./types";
 // 数据库配置
 const DB_CONFIG = {
   "GeoLite2-City.mmdb": {
-    url: "https://gh-proxy.com/github.com/P3TERX/GeoLite.mmdb/releases/download/2025.07.07/GeoLite2-City.mmdb",
+    url: "https://gh-proxy.com/https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.19/GeoLite2-City.mmdb",
     expectedSize: 58 * 1024 * 1024, // 约58MB
   },
   "GeoLite2-ASN.mmdb": {
-    url: "https://gh-proxy.com/github.com/P3TERX/GeoLite.mmdb/releases/download/2025.07.07/GeoLite2-ASN.mmdb",
+    url: "https://gh-proxy.com/https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.19/GeoLite2-ASN.mmdb",
     expectedSize: 10 * 1024 * 1024, // 约10MB
   },
   "GeoCN.mmdb": {
