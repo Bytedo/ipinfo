@@ -16,35 +16,35 @@ export default function VersionSwitcher() {
     setBaseDomain(domain.replace(/^(ip4?\.|ip6?\.)/, ''));
   }, []);
   
-  const versions = [
-    {
-      id: 'auto',
-      label: '自动检测',
-      icon: Globe,
-      url: baseDomain ? `https://ip.${baseDomain}` : '#',
-      description: '自动选择最佳IP版本',
-      color: 'text-gray-600 dark:text-gray-400',
-      bg: 'bg-gray-100 dark:bg-gray-800/50'
-    },
-    {
-      id: 'ipv4',
-      label: 'IPv4',
-      icon: Wifi,
-      url: baseDomain ? `https://ip4.${baseDomain}` : '#',
-      description: '强制使用IPv4查询',
-      color: 'text-blue-600 dark:text-blue-400',
-      bg: 'bg-blue-100 dark:bg-blue-900/30'
-    },
-    {
-      id: 'ipv6',
-      label: 'IPv6',
-      icon: Wifi,
-      url: baseDomain ? `https://ip6.${baseDomain}` : '#',
-      description: '强制使用IPv6查询',
-      color: 'text-purple-600 dark:text-purple-400',
-      bg: 'bg-purple-100 dark:bg-purple-900/30'
-    }
-  ];
+  // const versions = [
+  //   {
+  //     id: 'auto',
+  //     label: '自动检测',
+  //     icon: Globe,
+  //     url: baseDomain ? `https://ip.${baseDomain}` : '#',
+  //     description: '自动选择最佳IP版本',
+  //     color: 'text-gray-600 dark:text-gray-400',
+  //     bg: 'bg-gray-100 dark:bg-gray-800/50'
+  //   },
+  //   {
+  //     id: 'ipv4',
+  //     label: 'IPv4',
+  //     icon: Wifi,
+  //     url: baseDomain ? `https://ip4.${baseDomain}` : '#',
+  //     description: '强制使用IPv4查询',
+  //     color: 'text-blue-600 dark:text-blue-400',
+  //     bg: 'bg-blue-100 dark:bg-blue-900/30'
+  //   },
+  //   {
+  //     id: 'ipv6',
+  //     label: 'IPv6',
+  //     icon: Wifi,
+  //     url: baseDomain ? `https://ip6.${baseDomain}` : '#',
+  //     description: '强制使用IPv6查询',
+  //     color: 'text-purple-600 dark:text-purple-400',
+  //     bg: 'bg-purple-100 dark:bg-purple-900/30'
+  //   }
+  // ];
 
   const getCurrentVersion = () => {
     if (!isClient) return 'auto'; // 服务器端和首次渲染时默认为auto
@@ -57,11 +57,11 @@ export default function VersionSwitcher() {
 
   return (
     <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-      <div className="flex items-center space-x-2">
+      {/* <div className="flex items-center space-x-2">
         <Settings className="w-4 h-4 text-[rgb(var(--color-text-muted))]" />
         <span className="text-sm text-[rgb(var(--color-text-secondary))] font-medium">IP版本:</span>
-      </div>
-      <div className="flex gap-2">
+      </div> */}
+      {/* <div className="flex gap-2">
         {versions.map((version) => {
           const isActive = currentVersion === version.id;
           const Icon = version.icon;
@@ -100,7 +100,7 @@ export default function VersionSwitcher() {
             </motion.a>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 } 
